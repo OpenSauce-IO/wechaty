@@ -79,7 +79,7 @@ bot
   // Skip message from self, or inside a room
   if (msg.self() || msg.room()) return
 
-  log.info('Bot', 'talk: %s'  , msg)
+  log.info('Bot', 'talkssssssss: %s'  , msg)
 
   try {
     // const reply = tuling.ask(msg.content(), {userid: msg.from()})

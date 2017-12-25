@@ -93,6 +93,7 @@
     "@types/ws": "^3.2.0",
     "bl": "^1.2.0",
     "brolog": "^1.2.0",
+    "chromedriver": "^2.33.2",
     "hot-import": "^0.1.0",
     "mime": "^2.0.0",
     "puppeteer": "^0.13.0",
