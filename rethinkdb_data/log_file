@@ -1,0 +1,35 @@
+2017-12-27T13:42:50.877434000 40.040123s notice: Recursively removing directory /Users/K/dev/code/opensauce/wechaty/rethinkdb_data/tmp
+2017-12-27T13:42:50.879879000 40.042572s notice: Initializing directory /Users/K/dev/code/opensauce/wechaty/rethinkdb_data
+2017-12-27T13:42:50.879985000 40.042673s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/Users/K/dev/code/opensauce/wechaty/rethinkdb_data' did not already exist or is empty.)
+2017-12-27T13:42:50.880010000 40.042698s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-12-27T13:42:50.886408000 40.049097s notice: Running on Darwin 16.7.0 x86_64
+2017-12-27T13:42:50.886448000 40.049136s notice: Loading data from directory /Users/K/dev/code/opensauce/wechaty/rethinkdb_data
+2017-12-27T13:42:50.941352000 40.104040s info: Automatically using cache size of 469 MB
+2017-12-27T13:42:50.941796000 40.104484s notice: Listening for intracluster connections on port 29015
+2017-12-27T13:42:50.943105000 40.105793s notice: Listening for client driver connections on port 28015
+2017-12-27T13:42:50.943256000 40.105944s notice: Listening for administrative HTTP connections on port 8080
+2017-12-27T13:42:50.943258000 40.105946s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-12-27T13:42:50.943262000 40.105950s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-12-27T13:42:50.943265000 40.105953s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-12-27T13:42:50.943269000 40.105957s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-12-27T13:42:50.943274000 40.105962s notice: Server ready, "Ks_Yuzubook_local_7vy" 200eef33-01db-444a-a13d-9959e18a3f19
+2017-12-27T14:11:01.883301000 40.020432s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-12-27T14:11:01.889942000 40.027069s notice: Running on Darwin 16.7.0 x86_64
+2017-12-27T14:11:01.890242000 40.027368s notice: Loading data from directory /Users/K/dev/code/opensauce/wechaty/rethinkdb_data
+2017-12-27T14:11:01.929071000 40.066197s info: Automatically using cache size of 5936 MB
+2017-12-27T14:11:01.929510000 40.066636s notice: Listening for intracluster connections on port 29015
+2017-12-27T14:11:01.931200000 40.068326s notice: Listening for client driver connections on port 28015
+2017-12-27T14:11:01.931301000 40.068427s notice: Listening for administrative HTTP connections on port 8080
+2017-12-27T14:11:01.931303000 40.068429s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-12-27T14:11:01.931305000 40.068431s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-12-27T14:11:01.931307000 40.068433s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-12-27T14:11:01.931310000 40.068436s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-12-27T14:11:01.931313000 40.068439s notice: Server ready, "Ks_Yuzubook_local_7vy" 200eef33-01db-444a-a13d-9959e18a3f19
+2017-12-27T14:15:46.580676000 324.734429s info: Table cf9203ab-e3ee-479d-a0cc-9b0acee94d7a: Starting a new Raft election for term 1.
+2017-12-27T14:15:46.581353000 324.735106s info: Table cf9203ab-e3ee-479d-a0cc-9b0acee94d7a: Added replica on this server.
+2017-12-27T14:15:46.590281000 324.744074s info: Table cf9203ab-e3ee-479d-a0cc-9b0acee94d7a: This server is Raft leader for term 1. Latest log index is 0.
+2017-12-27T14:16:06.951522000 345.106502s notice: Removing file /Users/K/dev/code/opensauce/wechaty/rethinkdb_data/cf9203ab-e3ee-479d-a0cc-9b0acee94d7a
+2017-12-27T14:16:06.951528000 345.106508s info: Table cf9203ab-e3ee-479d-a0cc-9b0acee94d7a: Deleted the table.
+2017-12-27T14:16:15.378625000 353.534096s info: Table 4f6f16db-32e5-4396-bb16-61da9e4bc70f: Starting a new Raft election for term 1.
+2017-12-27T14:16:15.378748000 353.534219s info: Table 4f6f16db-32e5-4396-bb16-61da9e4bc70f: Added replica on this server.
+2017-12-27T14:16:15.387083000 353.542555s info: Table 4f6f16db-32e5-4396-bb16-61da9e4bc70f: This server is Raft leader for term 1. Latest log index is 0.

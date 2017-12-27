@@ -27,6 +27,7 @@
  */
 /* tslint:disable:no-var-requires */
 /* tslint:disable:variable-name */
+const r               = require('rethinkdb')
 const qrcodeTerminal  = require('qrcode-terminal')
 const Tuling123       = require('tuling123-client')
 
@@ -39,7 +40,7 @@ import {
   config,
   Wechaty,
   log,
-}           from '../'
+}           from '.'
 
 // log.level = 'verbose'
 // log.level = 'silly'
@@ -54,6 +55,14 @@ const TULING123_API_KEY = '43886559309a4dc8abce3f65edb92c56'
 const tuling = new Tuling123(TULING123_API_KEY)
 
 const bot = Wechaty.instance({ profile: config.default.DEFAULT_PROFILE })
+
+var connection = null
+r.connect({ host: 'localhost', port: 28015 }, function(err, conn) {
+  if(err) throw err
+  console.log('connected')
+  connection = conn
+})
+
 
 console.log(`
 Welcome to Tuling Wechaty Bot.
@@ -75,11 +84,12 @@ bot
   }
   console.log(`${url}\n[${code}] Scan QR Code in above url to login: `)
 })
+
 .on('message', async msg => {
   // Skip message from self, or inside a room
   if (msg.self() || msg.room()) return
 
-  log.info('Bot', 'talkssssssss: %s'  , msg)
+  log.info('Bot', 'talk: %s'  , msg)
 
   try {
     // const reply = tuling.ask(msg.content(), {userid: msg.from()})
@@ -88,6 +98,15 @@ bot
         data.text,
         msg.content(),
       )
+      r.db('wechaty').table('messages').insert({
+        userId: msg.from(),
+        message: msg.content(),
+        replied: data.text
+      }).run(connection, function(err, result) {
+        if (err) throw err;
+        console.log(JSON.stringify(result, null, 2));
+      })
+
       msg.say(data.text)
     })
   } catch (e) {
